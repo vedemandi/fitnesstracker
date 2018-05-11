@@ -8,6 +8,10 @@ import { NavComponent } from './nav/nav.component';
 import { MessagesComponent } from './messages/messages.component';
 import { HomeComponent } from './home/home.component';
 import { GameComponent } from './game/game.component';
+import { MessagesService } from './services/Messages.service';
+import { GameService } from './services/Game.service';
+import { LoginComponent } from './login/login.component';
+import { CalcalComponent } from './calcal/calcal.component';
 
 
 
@@ -17,7 +21,9 @@ import { GameComponent } from './game/game.component';
     NavComponent,
     MessagesComponent,
     HomeComponent,
-    GameComponent
+    GameComponent,
+    LoginComponent,
+    CalcalComponent
   ],
   imports: [
     BrowserModule,
@@ -25,10 +31,11 @@ import { GameComponent } from './game/game.component';
     RouterModule.forRoot([
         { path: 'home', component: HomeComponent },
         { path: 'game', component: GameComponent },
+        { path: 'login', component: LoginComponent },
         { path: '', redirectTo: '/home', pathMatch: 'full'}
     ])
   ],
-  providers: [],
+  providers: [MessagesService, GameService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
