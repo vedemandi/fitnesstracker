@@ -1,5 +1,8 @@
 export class Work{
-    Date:number;
-    workout:string;
-    Totaltime:string;
+    constructor(
+
+    
+   public Date:string,
+    public workout:string,
+    public Totaltime:string){}
 }

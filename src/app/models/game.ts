@@ -1,6 +1,7 @@
 export class Game {
 
     Person: User[] = [];
+    Myworkouts:Work[]=[];
     
 }
 
@@ -8,10 +9,10 @@ export class User {
     Name: string;
     MyExerciseList: Work[] = [];
     Record: Work[] = [];
-    Date: number;
+    Date: string;
 }
 export class Work{
-    Date: number;
+    Date: string;
     workout: string;
     Totaltime:string;
 }
