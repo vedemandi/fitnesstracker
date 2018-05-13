@@ -12,6 +12,8 @@ import { MessagesService } from './services/Messages.service';
 import { GameService } from './services/Game.service';
 import { LoginComponent } from './login/login.component';
 import { CalcalComponent } from './calcal/calcal.component';
+import { TimerComponent } from './timer/Timer.component';
+import { TimerService} from './services/Timer.service';
 
 
 
@@ -23,7 +25,8 @@ import { CalcalComponent } from './calcal/calcal.component';
     HomeComponent,
     GameComponent,
     LoginComponent,
-    CalcalComponent
+    CalcalComponent,
+    TimerComponent
   ],
   imports: [
     BrowserModule,

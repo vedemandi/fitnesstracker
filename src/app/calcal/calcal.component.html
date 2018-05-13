@@ -1,3 +1,53 @@
-<p>
-  calcal works!
-</p>
+
+
+<div class="container">
+    <div *ngIf="!submitted">
+    <!--<div id="messages" class="hide" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div id="messages_content"></div>
+      </div>-->
+
+  <h5 class="container-title">MY WORKOUT</h5>
+  <form [formGroup]="workForm" (ngSubmit)="onSubmit(workForm)">
+      <div class="form-group">
+  <!--<form action="/work" id="workout" method="get">
+    <div class="form-group">-->
+      <label for="date">Date:</label>
+      <input type="date" class="form-control" placeholder="Enter date" [(ngModel)]="model.date" formControlName="date">
+    </div>
+    <div class="form-group">
+      <label for="work">so what do you wanna work on today?:</label>
+      <select id="type" [(ngModel)]="model.work" formControlName="work">
+        <option value="Jog">Jogging</option>
+        <option value="weights">Weight Lifting</option>
+        <option value="fitcycle">Cycling</option>
+        <option value="legpress">Leg Work</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="totaltime">Totaltime (minutes):</label>
+      <input type="number" class="form-control" placeholder="Enter totaltime" [(ngModel)]="model.totaltime" formControlName="totaltime">
+    </div>
+  </div>
+</div>
+
+<div *ngIf="submitted">
+    <h2>You submitted the following:</h2>
+    <div class="row">
+        <div class="col-md-2">Date:</div>
+        <div class="col-md-10 pull-left">{{ submittedModel.date }}</div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">Type of Workout:</div>
+        <div class="col-md-10 pull-left">{{ submittedModel.work }}</div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">Totaltime</div>
+        <div class="col-md-10 pull-left">{{ submittedModel.totaltime }}</div>
+    </div>
+    <br />
+    <button class="btn btn-default" (click)="submitted=false">Edit</button>
+    <button class="btn btn-default" (click)="goBack()">Go back</button>
+</div>    
+
+

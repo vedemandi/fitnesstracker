@@ -1,20 +1,17 @@
 export class Game {
 
-    Players: User[] = [];
-    DealerId: string;
-    Picture: {
-        url: string
-    };
-    PlayedQuotes: Quote[] = [];
+    Person: User[] = [];
+    
 }
 
 export class User {
     Name: string;
-    MyQuotes: string[];
+    MyExerciseList: Work[] = [];
+    Record: Work[] = [];
+    Date: number;
 }
-
-export class Quote {
-    Text: string;
-    PlayerId: string;
-    Chosen: boolean = false;
+export class Work{
+    Date: number;
+    workout: string;
+    Totaltime:string;
 }
