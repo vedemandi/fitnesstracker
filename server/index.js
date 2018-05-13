@@ -8,7 +8,7 @@ const game = require('./game/controller');
 var app = express()
 
 const servername = "localhost";
-const port = 8080;
+const port = 4200;
 
 
 

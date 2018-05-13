@@ -8,7 +8,7 @@ import { Work } from '../models/work';
 
 @Injectable()
 export class GameService {
-private _api="http//localhost:8080/game";
+private _api="http//localhost:4200/game";
  Workstack=[];
     Me: User;
     model:Game;

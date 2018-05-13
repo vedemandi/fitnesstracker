@@ -3,8 +3,8 @@ import { Location } from '@angular/common';
 import { Http } from "@angular/http";
 import { Game, User } from '../models/game';
 import { NgForm } from '@angular/forms';
-import { MessagesService } from '../services/messages.service';
-import { GameService } from '../services/game.service';
+import { MessagesService } from '../services/Messages.service';
+import { GameService } from '../services/Game.service';
 import { Router } from '@angular/router';
 import { Work } from '../models/work'
 

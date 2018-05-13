@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpModule } from '@angular/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -11,10 +12,7 @@ import { GameComponent } from './game/game.component';
 import { MessagesService } from './services/Messages.service';
 import { GameService } from './services/Game.service';
 import { LoginComponent } from './login/login.component';
-import { CalcalComponent } from './calcal/calcal.component';
-import { TimerComponent } from './timer/Timer.component';
-import { TimerService} from './services/Timer.service';
-
+import { CalcalComponent } from './calcal/Calcal.component';
 
 
 @NgModule({
@@ -24,12 +22,13 @@ import { TimerService} from './services/Timer.service';
     MessagesComponent,
     HomeComponent,
     GameComponent,
-    LoginComponent,
     CalcalComponent,
-    TimerComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,                               
+    ReactiveFormsModule,
     HttpModule,
     RouterModule.forRoot([
         { path: 'home', component: HomeComponent },

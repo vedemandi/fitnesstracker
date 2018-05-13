@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GameService } from '../services/game.service';
+import { GameService } from '../services/Game.service';
 
 declare var googleyolo: any;
 

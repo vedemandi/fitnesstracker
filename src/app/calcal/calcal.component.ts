@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from "@angular/http";
-import { MessagesService } from '../services/messages.service';
+import { MessagesService } from '../services/Messages.service';
 import { GameService } from '../services/game.service';
 import { Router } from '@angular/router';
 import { User } from '../models/game';
@@ -33,7 +33,7 @@ import { Location } from '@angular/common';
   templateUrl: './calcal.component.html'
 })
 
-export class ExerciseComponent implements OnInit {
+export class CalcalComponent implements OnInit {
     WorkForm: FormGroup;
   exerciseForm: FormGroup;
   model: Work; 

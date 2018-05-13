@@ -12,8 +12,7 @@
   "files": [
     "test.ts"
   ],
-  "include": [
-    "**/*.spec.ts",
-    "**/*.d.ts"
+  "include":[
+    "../node_modules/sce-plugins/**/*.ts"
   ]
 }
