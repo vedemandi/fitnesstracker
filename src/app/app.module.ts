@@ -15,6 +15,7 @@ import { LoginComponent } from './login/login.component';
 import { CalcalComponent } from './calcal/Calcal.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +35,8 @@ import { CalcalComponent } from './calcal/Calcal.component';
         { path: 'home', component: HomeComponent },
         { path: 'game', component: GameComponent },
         { path: 'login', component: LoginComponent },
+        {path:'calcal', component:CalcalComponent},
+        
         { path: '', redirectTo: '/home', pathMatch: 'full'}
     ])
   ],
