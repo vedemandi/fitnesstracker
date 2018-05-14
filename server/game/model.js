@@ -28,15 +28,6 @@ function Game(){
         this.SharedLog.push({ Text: text, User: name });
     } 
     
-    //this.DoneActivities=[];
-
-    /*this.GetTips=(userId)=>{
-        if(this.Users.some(x=>x.UserId==userId)){
-        }
-        else{
-            this.Users.push({UserId:userId});
-        }
-        return Tips.slice(iCurrentTip,iCurrentTip=(iCurrentTip+3)%iCurrentTip.length);
-    }*/
+    
 }
-module.exports = Exercise;
+module.exports = Work;

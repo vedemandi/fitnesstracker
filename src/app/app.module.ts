@@ -13,6 +13,7 @@ import { MessagesService } from './services/Messages.service';
 import { GameService } from './services/Game.service';
 import { LoginComponent } from './login/login.component';
 import { CalcalComponent } from './calcal/Calcal.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -31,6 +32,8 @@ import { CalcalComponent } from './calcal/Calcal.component';
     FormsModule,                               
     ReactiveFormsModule,
     HttpModule,
+    NgbModule.forRoot(),
+    FormsModule,
     RouterModule.forRoot([
         { path: 'home', component: HomeComponent },
         { path: 'game', component: GameComponent },
